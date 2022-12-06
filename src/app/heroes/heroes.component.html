@@ -1,0 +1,36 @@
+<!--creating the drop down list-->
+<!-- we useed an agular forloop finction to create a list of hero from heroes "*ngFor"-->
+<h2> Hero List</h2>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes">
+        <button type="button">
+          <a routerLink="/detial/{{hero.id}}">
+            <span class="badge">{{hero.id}}</span>
+            <span class="name">{{hero.name}}</span>
+          </a>
+          
+        </button>
+      </li>
+</ul>
+
+<!-- Import the hero detail pannel from HeroDetail compannet-->
+
+<!-- <app-hero-detail [hero]="selectedHero"></app-hero-detail> -->
+
+<!-- Creating details of the hero-->
+<!-- Title And Nane-->
+<!-- <h1>{{testMoneyValue | currency}}</h1> -->
+<!--
+<h1>{{DexNum }}</h1>
+<h1>{{hero.name | uppercase}} Details</h1>
+<div><span>id: </span>{{hero.id}}</div>
+
+<div>
+    <label for = ""> Hero's NickName: </label>
+        <input type="text" [(ngModel)] = "Hero.name">
+</div>
+-->
+
+
+
+

@@ -1,0 +1,13 @@
+<h2> The Choosen Champions</h2>
+<div class="heroes-menue">
+    <li *ngFor="let hero of heroes" routerLink="=/detial/{{hero.id}}">
+        <button type="button">
+            <a routerLink="/detial/{{hero.id}}">
+              <span class="badge">{{hero.id}}</span>
+              <span class="name">{{hero.name}}</span>
+            </a>
+            
+          </button>
+    </li>
+</div>
+
